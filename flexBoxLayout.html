@@ -1,0 +1,117 @@
+<!doctype html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FlexBox Layout</title>
+        <style>
+            * {
+                box-sizing: border-box; 
+            }
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: row;
+                margin: 0;
+            }
+            .outer-col-1 {
+                background: #e6d4e8;
+                flex: 0.5;
+            }
+            .outer-col-2 {
+                display: flex;
+                flex-direction: column;
+                flex: 4;
+            }
+            .inner-row {
+                display: flex;
+                flex-direction: row;
+            }
+            .inner-col {
+                flex: 4;
+            }
+            .inner-row article {
+                min-height: 60vh;
+            }
+            .inner-row aside {
+                background: beige;
+                flex: 1;
+            }
+            header, footer {
+                text-align : center;
+                font-weight: bold;
+                font-size: 20px;
+                background: rgb(205, 50, 140);
+                height: 20vh;
+            }
+            header, footer, article, nav, aside {
+                padding: 1em;
+                margin: 1px;
+            }
+            h1{
+                margin-left: 10px;
+            }
+            h2{
+                text-align : center;
+            }
+            .contentAside{
+                font-size: 12px;
+                margin-top:10px;
+                letter-spacing : 0.5px
+            }
+            article{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: rgb(153, 24, 24);
+                padding: 10px;
+                background: rgb(255, 230, 0);
+            }
+            .articleP{
+                color: black;
+                margin-left: 100px;
+                margin-right: 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+                background-color: rgb(47, 196, 255);
+            }
+            .mainHeader{
+                text-align: left;
+                margin-left: 28%;
+            }
+            .image{
+                margin-left: 370px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="outer-col-1"><h2>Nav</h2>
+            <ul><h3>#Contents:</h3>
+                <li>Header</li>
+                <li>Article</li>
+                <li>Aside</li>
+                <li>Footer</li>
+                <li>Nav</li>
+            </ul>    
+        </nav>
+        <div class="outer-col-2">
+            <header><h1 class = "mainHeader">FlexBox Layout</h1></header>
+            <div class="inner-row">
+            <div class="inner-col">
+                <article> <h2>Article</h2>
+                    <p class ="articleP">
+                        With CSS, you can control the color, font, the size of text, the spacing between elements, 
+                        how elements are positioned and laid out, what background images or background colors are to be used,
+                        different displays for different devices and screen sizes, and much more!
+                    </p>    
+                    <p class ="image">
+                        <img src="../assets/htmlCss.jpg" width="40%">
+                    </p>    
+                </article>
+                <footer>Footer</footer>
+            </div>
+            <aside><h2>Aside</h2>
+                <p class ="contentAside">
+                    An inline CSS is used to apply a unique style to a single HTML element. An inline CSS uses the style attribute of an HTML element.
+                </p>
+            </aside>
+            </div>
+        </div>
+    </body>
+</html>
