@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <style>
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        max-height: 150vh;
+    }
+    .cards img {
+        margin: 30px;
+        border: 3px solid #000;
+        box-shadow: 20px 20px 3px 3px rgba(0,0,0,0.4); 
+        max-width: 20vw;
+    }
+    .box{
+        background-color: rgb(0, 0, 0);
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 10px;
+        box-shadow: 20px 20px 3px 3px rgba(0,0,0,0.4); 
+    }
+    h1 {
+        text-align: center;
+        text-shadow: 10px 10px 3px rgba(255, 255, 255, 0.15); 
+        text-transform: uppercase;
+        color: seashell;
+    }
+    </style>
+</title>
+<body>
+    <div class="box">
+        <h1>Photo Gallery</h1>
+    </div>
+        <main class="cards">
+        <img src="https://image.shutterstock.com/image-photo/birds-piranga-olivacea-scarlet-tanager-260nw-1740930320.jpg" alt="Sample photo 1">
+        <img src="../assets/nature7.jpg" alt="Sample photo 2">
+        <img src="../assets/nature4.jpg" alt="Sample photo 3">
+        <img src="../assets/nature.jpg" alt="Sample photo 4">
+        
+        <img src="../assets/nature2.jpg" alt="Sample photo 5">
+        <img src="../assets/nature6.jpg" alt="Sample photo 6">
+    </main>
+</body>
